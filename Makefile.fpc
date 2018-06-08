@@ -1,0 +1,21 @@
+#
+#   Makefile.fpc for FPC text demos (part of FPC demo package)
+#
+
+[target]
+programs=avrforth
+
+[default]
+#fpcdir=f:/fpc
+cpu=i386
+target=win32
+
+[compiler]
+options=-S2 -Sh
+
+[package]
+name=avrforth-$(PACKAGE_VERSION)
+version=norilsk-2
+
+[dist]
+destdir=../dist
